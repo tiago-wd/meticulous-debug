@@ -1,0 +1,30 @@
+{
+    "extends": ["plugin:@nx/react"],
+    "ignorePatterns": ["!**/*"],
+    "overrides": [
+      {
+        "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+        "rules": {
+          "@nx/enforce-module-boundaries": "off",
+          "@typescript-eslint/no-empty-function":"off"
+  
+        }
+      },
+      {
+        "files": ["*.ts", "*.tsx"],
+        "rules": {
+          "@nx/enforce-module-boundaries": "off",
+          "@typescript-eslint/no-empty-function":"off",
+          "@typescript-eslint/no-explicit-any": "off"
+        }
+      },
+      {
+        "files": ["*.js", "*.jsx"],
+        "rules": {
+          "@nx/enforce-module-boundaries": "off",
+          "@typescript-eslint/no-empty-function":"off"
+        }
+      }
+    ]
+  }
+  
