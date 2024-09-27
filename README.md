@@ -32,6 +32,7 @@ We're investigating a problem where custom headers (specifically X-MagicBell hea
    c. Open the browser's Developer Tools and go to the Network tab.
 
    d. Check the headers of the request to the MagicBell API (https://api.magicbell.com). You should see the X-MagicBell headers present.
+   ![image](https://github.com/user-attachments/assets/e4876921-9bf0-4248-9c79-de6672bacf4b)
 
    e. Now, uncomment the Meticulous script import in `src/index.html`:
       ```html
@@ -41,6 +42,7 @@ We're investigating a problem where custom headers (specifically X-MagicBell hea
    f. Refresh the application in your browser.
 
    g. Check the headers of the MagicBell API request again. You'll notice that the X-MagicBell headers are now missing.
+   ![image](https://github.com/user-attachments/assets/6bc7d4bb-0a88-4415-882b-a17ce2c3dc15)
 
 ## Expected Behavior
 
